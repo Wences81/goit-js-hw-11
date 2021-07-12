@@ -51,7 +51,7 @@ const makeTransaction = transaction => {
     setTimeout(() => {
     
       if (canProcess) {
-        resolve(transaction.id, delay);
+        resolve(delay);
       } else {
         reject(transaction.id);
       }
