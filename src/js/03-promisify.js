@@ -53,7 +53,7 @@ const randomIntegerFromInterval = (min, max) => {
       const canProcess = Math.random() > 0.3;
 
       if (canProcess) {
-        resolve( delay );
+        resolve({id: transaction.id, time: delay});
       } 
         reject(transaction.id);
     }, delay);
